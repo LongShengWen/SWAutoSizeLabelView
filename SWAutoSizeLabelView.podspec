@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.author             = { "LongShengWen" => "1142056181@qq.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/LongShengWen/SWAutoSizeLabelView.git", :tag => "#{s.version}" }
-  s.source_files  = "/SWAutoSizeLabelView/AutoSizeLabelView/*
+  s.source_files  = "SWAutoSizeLabelView/AutoSizeLabelView/*"
   s.dependency 'Masonry'
 end
