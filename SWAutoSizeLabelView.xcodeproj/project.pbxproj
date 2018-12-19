@@ -21,6 +21,8 @@
 		8F51405321C4FD8E0044A2BD /* swAutoSizeLabelCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F51404E21C4FD8D0044A2BD /* swAutoSizeLabelCollectionLayout.m */; };
 		8F51405421C4FD8E0044A2BD /* swAutoSizeLabelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F51404F21C4FD8D0044A2BD /* swAutoSizeLabelModel.m */; };
 		8F51405521C4FD8E0044A2BD /* swAutoSizeLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F51405021C4FD8D0044A2BD /* swAutoSizeLabelCell.m */; };
+		8F5140E521C9F1490044A2BD /* DemoMp4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F5140E321C9F1490044A2BD /* DemoMp4.mp4 */; };
+		8F5140E621C9F1490044A2BD /* DemoImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F5140E421C9F1490044A2BD /* DemoImage.jpeg */; };
 		BAB397168C1BFB82B074FB40 /* libPods-SWAutoSizeLabelViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2049C91203A5E148D9A53C9C /* libPods-SWAutoSizeLabelViewUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,8 @@
 		8F51404F21C4FD8D0044A2BD /* swAutoSizeLabelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = swAutoSizeLabelModel.m; sourceTree = "<group>"; };
 		8F51405021C4FD8D0044A2BD /* swAutoSizeLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = swAutoSizeLabelCell.m; sourceTree = "<group>"; };
 		8F51405121C4FD8E0044A2BD /* swAutoSizeLabelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swAutoSizeLabelModel.h; sourceTree = "<group>"; };
+		8F5140E321C9F1490044A2BD /* DemoMp4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DemoMp4.mp4; sourceTree = "<group>"; };
+		8F5140E421C9F1490044A2BD /* DemoImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DemoImage.jpeg; sourceTree = "<group>"; };
 		B94086395C68AB0C6F0DB2E0 /* Pods-SWAutoSizeLabelViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWAutoSizeLabelViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWAutoSizeLabelViewUITests/Pods-SWAutoSizeLabelViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +145,7 @@
 		8F51401621C4FCE40044A2BD /* SWAutoSizeLabelView */ = {
 			isa = PBXGroup;
 			children = (
+				8F5140E221C9F1060044A2BD /* image */,
 				8F51401721C4FCE40044A2BD /* AppDelegate.h */,
 				8F51401821C4FCE40044A2BD /* AppDelegate.m */,
 				8F51401A21C4FCE40044A2BD /* ViewController.h */,
@@ -185,6 +190,15 @@
 				8F51404A21C4FD8D0044A2BD /* swAutoSizeLabelView.m */,
 			);
 			path = AutoSizeLabelView;
+			sourceTree = "<group>";
+		};
+		8F5140E221C9F1060044A2BD /* image */ = {
+			isa = PBXGroup;
+			children = (
+				8F5140E421C9F1490044A2BD /* DemoImage.jpeg */,
+				8F5140E321C9F1490044A2BD /* DemoMp4.mp4 */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 		92E411C1B7A7FD54B4A6252B /* Pods */ = {
@@ -306,6 +320,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F5140E521C9F1490044A2BD /* DemoMp4.mp4 in Resources */,
+				8F5140E621C9F1490044A2BD /* DemoImage.jpeg in Resources */,
 				8F51402421C4FCEB0044A2BD /* LaunchScreen.storyboard in Resources */,
 				8F51402121C4FCEB0044A2BD /* Assets.xcassets in Resources */,
 				8F51401F21C4FCE40044A2BD /* Main.storyboard in Resources */,
