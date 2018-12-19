@@ -13,6 +13,7 @@
 
 @interface ViewController ()
 @property(nonatomic,strong) swAutoSizeLabelView *autoresizeLabelFlow;
+@property(nonatomic,strong) swAutoSizeLabelView *autoresizeLabelFlow2;
 @property (nonatomic,strong) NSMutableArray<swAutoSizeLabelModel *>   *data;
 @end
 
@@ -48,6 +49,28 @@
         }];
     };
     [_autoresizeLabelFlow reload];
+    
+    _autoresizeLabelFlow2 = [swAutoSizeLabelView new];
+    [self.view addSubview:_autoresizeLabelFlow2];
+    _autoresizeLabelFlow2.textNormalColor = [UIColor redColor];
+    _autoresizeLabelFlow2.lineBreak = NO;
+    _autoresizeLabelFlow2.bounces = NO;
+    //    _autoresizeLabelFlow2.itemCornerRaius = 5;
+    //    _autoresizeLabelFlow2.itemBorderWidth = 1;
+    //    _autoresizeLabelFlow2.itemBorderColor = [UIColor greenColor];
+    //    _autoresizeLabelFlow2.itemSelectColor = [UIColor blueColor];
+    _autoresizeLabelFlow2.data = self.data;
+    _autoresizeLabelFlow2.selectHandler = ^(NSUInteger index, swAutoSizeLabelModel *model) {
+        NSLog(@"index - %ld title = %@",index,model.itemTitle);
+    };
+    _autoresizeLabelFlow2.finshLayout = ^(CGSize size) {
+        NSLog(@"with - %f \n height - %f",size.width,size.height);
+        [__weakSelf.autoresizeLabelFlow2 mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.height.mas_equalTo(size.height);
+        }];
+    };
+    [_autoresizeLabelFlow2 reload];
+    
 }
 - (void)addLayout {
     [_autoresizeLabelFlow mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -55,6 +78,12 @@
         make.left.mas_equalTo(self.view).mas_offset(20);
         make.height.mas_equalTo(50);
         make.width.mas_equalTo(50);
+    }];
+    [_autoresizeLabelFlow2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(self.view).mas_offset(-40);
+        make.left.mas_equalTo(self.view).mas_offset(20);
+        make.height.mas_equalTo(20);
+        make.right.mas_equalTo(self.view).mas_offset(-20);
     }];
 }
 - (NSMutableArray<swAutoSizeLabelModel *> *)data {
